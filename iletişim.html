@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="iletişim.css">
+</head>
+<body>
+    <header>
+        
+        <div> 
+         <nav>
+ 
+         <div class="resim">
+          <img id="logo" src="logo.png" alt="lece vaykiki"  >
+         </div>
+ 
+         <ul>
+             <li>
+                 <a href="anasayfa.html">Anasayfa</a>
+             </li>
+ 
+             <li>
+                 <a href="hakkımızda.html" target="_blank">Hakkımızda</a>
+             </li>
+ 
+             <li>
+                 <a href="projeler.html" target="_blank">Projeler</a>
+             </li>
+ 
+             <li>
+                 <a href="iletişim.html" target="_blank">İletişim</a>
+             </li>
+         </ul>
+ 
+         <div>
+             <input class="aramaçubuğu" type="search" placeholder="Ürün ara" >
+            
+         </div>
+     </nav>
+         
+ </div>
+     </header>
+    <div class="form-container">
+        <form action="anasayfa.html">
+            <h1 >İletişim Formu</h1>
+
+            <div class="name-container">
+                <div class="isim">
+                    <label for="isim">First Name</label>
+                    <input id="isim" type="text" placeholder="Lütfen adınızı giriniz" required>
+                </div>
+
+                <div class="soyisim">
+                    <label for="soyisim">Last Name</label>
+                    <input id="soyisim" type="text" placeholder="Lütfen soyadınızı giriniz" required>
+                </div>  
+                <label for="mail" id="email">Email Address</label>
+            <input id="mail" type="email" placeholder="Enter your email" required>
+
+            <label for="telefon" id="telefonlabel">Phone</label>
+            <input id="telefon" type="number" placeholder="Enter your phone number" required>
+            </div>
+
+          
+
+            <textarea required placeholder="Lütfen Mesajınızı Giriniz"></textarea>
+
+
+            <div class="name-container-2">
+                <div>
+                    <label for="Şehir">City</label>
+                    <select name="Şehir" id="Şehir" required>
+                        <option value="Istanbul">Istanbul</option>
+                        <option value="London">London</option>
+                        
+                        <option value="Paris">Paris</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="ÜLKE">Country</label>
+                    <select name="ÜLKE" id="ÜLKE" required>
+                        <option value="Turkey">Turkey</option>
+                        <option value="England">England</option>
+                        
+                        <option value="France">France</option>
+                    </select>
+                </div>
+            </div>
+            <input value="Gönder" id="GİRİŞ" type="submit">
+        </form>
+    </div>
+
+    <footer>
+        &copy;2025 LECE Vaykiki tüm hakları saklıdır.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    position:sticky ;
+    top: 0;
+
+    .aramaçubuğu{
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+        padding: 5px; 
+        border: solid;  
+    }
+    .aramaçubuğu:hover{
+        transform: scaleX(1.1);
+        transition: 0.5s;
+    }
+     p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #logo{
+        width: 100px;
+        display: inline;
+    }
+    
+    ul{
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        list-style: none;
+
+        a{
+            margin: 0 20px;
+            color: var(--textcolor);
+            text-decoration: none;
+            font-size: large;
+            letter-spacing: 2px;
+        }
+
+        a:hover{
+            color: #9DDE8B;
+           
+        }
+    }
+
+}
+
+
+
+nav{ 
+    background-color:white;
+    width: 100%;
+    
+    justify-content: space-around;
+    align-items: center;
+   
+    border-bottom:solid rgba(128, 128, 128, 0.479);
+    display: flex;
+}
+
+.sekizinci{
+
+    display: flex;
+    justify-content: end;
+    img{
+        width: 300px;
+        border-radius: 60px;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+
+    .sürdürülebilir{
+        margin-top: 60px;
+        margin-left: 30px;
+        width: 400px;
+        height: 80px;
+         margin-right: 100px;
+        font-size: 20px;
+    }
+}
+
+.dokuzuncu{
+
+    display: flex;
+    
+    
+    img{
+        width: 300px;
+        border-radius: 60px;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+
+    .tasarımcı{
+        margin-top: 60px;
+        margin-left: 30px;
+        width: 400px;
+        height: 80px;
+       
+        font-size: 20px;
+    }
+}
+
+.onuncu{
+
+    display: flex;
+    justify-content: end;
+    img{
+        width: 300px;
+        border-radius: 60px;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+
+    .fit{
+        margin-top: 60px;
+        margin-left: 30px;
+        width: 400px;
+        height: 80px;
+         margin-right: 100px;
+        font-size: 20px;
+    }
+}
+
+.onbirinci{
+
+    display: flex;
+    
+    
+    img{
+        width: 300px;
+        border-radius: 60px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-bottom: 30px;
+    }
+
+    .özel{
+        margin-top: 60px;
+        margin-left: 30px;
+        width: 400px;
+        height: 80px;
+       margin-bottom: 30px;
+        font-size: 20px;
+    }
+}
+@keyframes animasyon{
+    from{
+        margin-top: 200px;
+    }
+}
+.sekizinci{
+    animation: animasyon;
+    animation-duration: 2s;
+
+}
+
+
+footer{
+    background-color: #9dde8b61;
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+    
+    height: 50px;
+    padding-top:25px ;
+    margin-bottom: 0px;
+    width: 100%;
+   
+}
+

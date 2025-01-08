@@ -1,0 +1,230 @@
+header{
+    position:sticky ;
+         top: 0;
+ 
+         h1{
+             margin-top: 10px;
+         }
+ 
+         .aramaçubuğu{
+             width: 200px;
+             height: 30px;
+             border-radius: 10px;
+             padding: 5px; 
+             border: solid;
+             
+             
+             
+             
+         }
+         .aramaçubuğu:hover{
+            transform: scaleX(1.1);
+            transition: 0.5s;
+        }
+ 
+          p{
+             font-family: Arial, Helvetica, sans-serif;
+         
+         
+         }
+         #logo{
+            
+             width: 100px;
+             display: inline;
+          
+           
+         }
+ 
+ }
+ 
+ 
+ 
+ nav{
+         
+       background-color: white;
+         width: 100%;
+         
+         justify-content: space-around;
+         align-items: center;
+        
+         border-bottom:solid rgba(128, 128, 128, 0.479);
+         display: flex;
+        
+        
+       
+  }
+ 
+ ul{
+     display: flex;
+     justify-content: center;
+     list-style: none;
+     padding: 24px;
+     
+     
+     a{
+         margin: 0 20px;
+         color: var(--textcolor);
+         text-decoration: none;
+         font-size: large;
+         letter-spacing: 2px;
+     }
+     a:hover{
+ 
+         color: #9DDE8B;
+         
+     }
+ }
+
+/* Genel stil ayarları */
+body {
+   
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Form kutusu stil */
+.form-container {
+   
+    background-color: white;
+    width: 40%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:  3px 3px 3px 10px rgba(104, 104, 104, 0.293);
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            background-color:#006769;
+            color: white;
+             padding: 10px;
+             border-radius: 10px;
+        }
+}
+
+
+/* Başlık stil */
+
+
+/* Etiketler için stil */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Input ve select kutularının stili */
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+   
+}
+
+/* Submit butonu stili */
+input[type="submit"] {
+    background-color: #9DDE8B;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+}
+
+
+/* Formu ortalamak için margin */
+.form-container form {
+ margin: auto;
+}
+
+/* First Name ve Last Name'i yan yana hizalamak için stil */
+.name-container {
+   width: 100%;
+    text-align: center;
+}
+
+.name-container input {
+    width: 98%;
+    /* Her biri %48 genişliğinde olacak şekilde */
+}
+
+/* City ve Country yan yana hizalamak için stil */
+.name-container-2 {
+   display: flex;
+   justify-content: center;
+    /* Elemanları başta hizalar */
+    gap: 10px;
+    /* Aralarındaki boşluğu azaltır */
+}
+
+.name-container-2 select {
+    width: 100%;
+    /* Her biri %45 genişliğinde olacak şekilde, %50'den daha küçük */
+    padding: 10px;
+    
+}
+
+.isim{
+    
+    text-align: center;
+}
+
+.soyisim{
+
+    text-align: center;
+}
+
+#email{
+    text-align: center;
+}
+
+#telefonlabel{
+    text-align: center;
+}
+
+#Şehir{
+    width: 250px;
+    text-align: center;
+}
+
+#ÜLKE{
+    width: 250px;
+    text-align: center;
+}
+
+textarea{
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 6px;
+    max-width: 98%;
+    max-height: 400px;
+    border-radius: 5px;
+
+}
+
+footer{
+    background-color: #9DDE8B61;
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+    
+    height: 50px;
+    padding-top:25px ;
+    margin-bottom: 0%;
+    width: 100%;
+   
+}

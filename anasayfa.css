@@ -1,0 +1,354 @@
+:root{
+    --backrouncolor:white;
+    --textcolor:black;
+    --bordercolor:white;
+    --navcolor:white;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--backrouncolor);
+}
+
+header{
+        position:sticky ;
+        top: 0;
+        z-index: 1;
+
+        .aramaçubuğu{
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+            padding: 5px; 
+            border: solid;  
+            
+        }
+        
+        .aramaçubuğu:hover{
+            transform: scaleX(1.1);
+            transition: 0.5s;
+        }
+
+         p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #logo{
+            width: 100px;
+            display: inline;
+        }
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            list-style: none;
+
+            a{
+                margin: 0 20px;
+                color: var(--textcolor);
+                text-decoration: none;
+                font-size: large;
+                letter-spacing: 2px;
+            }
+
+            a:hover{
+                color: #9DDE8B;
+               
+            }
+        }
+
+}
+
+nav{ 
+    background-color:white;
+    width: 100%;
+    
+    justify-content: space-around;
+    align-items: center;
+   
+    border-bottom:solid rgba(128, 128, 128, 0.479);
+    display: flex;
+}
+
+.indirim{
+    animation: indirim;
+    animation-duration: 2s;
+    }
+    
+    @keyframes indirim
+    {
+    from{
+    margin-left: -500px;
+    }
+    }
+    @keyframes haftanınkombini{
+    from{
+    margin-right: -500px;
+    }
+    
+    }
+    .kombin{
+        animation: haftanınkombini;
+        animation-duration: 2s;
+    }
+    video{
+    animation: video;
+    animation-duration: 4s;
+    }
+    @keyframes video{
+    from{
+        opacity: 20%;
+    }
+    }
+
+
+
+
+video    
+    {
+        width: 500px;
+        
+    }
+
+.video{
+   
+    display: flex;
+    justify-content: space-between;
+     
+    img{
+        width: 500px;
+    }
+
+}
+.indirim{
+
+    height: 500px;
+}
+
+
+
+
+.erkekgiyim{
+   
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    width: 100%;
+   
+   img{
+        background-color:#D0DDD0;
+
+        width: 200px;
+        height: 300px;
+
+        border: solid 5px var(--backrouncolor) ;
+        border-radius: 10px;
+    }
+    
+
+    img:hover{
+        background-color: #AAB99A;
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 1s;
+       
+        
+    }
+   
+    
+}
+
+.erkekgiyimbaşlık{
+        border: solid var(--backrouncolor);border-width: 100%;
+        
+        color: var(--textcolor);
+        background-color:var(--backrouncolor) ;
+        
+        text-align: center;
+        
+        height: 30px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+        word-spacing: 20px;
+        letter-spacing: 5px;
+
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    .kadıngiyim{
+
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+
+        width: 100%;
+        margin-bottom: 30px;
+
+        img{
+            background-color:#F5EFFF;
+
+            width: 200px;
+            height: 300px;
+
+            border: solid 5px var(--bordercolor) ;
+            border-radius: 10px;
+
+        }
+
+        img:hover{
+            background-color:#CDC1FF;
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 1s;
+           
+           
+        }
+    }
+
+    .kadıngiyimbaşlık{
+
+        border: solid var(--bordercolor);
+        color: var(--textcolor);
+        background-color:var(--backrouncolor);
+        
+        text-align: center;
+
+        height: 30px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+
+        word-spacing: 20px;
+        letter-spacing: 5px;
+
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    footer{
+        background-color: #9dde8b61;
+       
+
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: small;
+        word-spacing: 2px;
+
+        height: 50px;
+        padding-top:25px ;
+        margin-bottom: 0px;
+        width: 100%;
+       
+    }
+
+    @media (max-width: 1200px) { 
+        .erkekgiyim, .kadıngiyim 
+        { 
+            flex-wrap: wrap;
+        } 
+    }
+    
+    @media (max-width: 768px) { 
+
+        nav{
+            width: 100%;
+        }
+
+        .aramaçubuğu 
+        { 
+            width: 150px;
+         } 
+
+        .video, .erkekgiyim, .kadıngiyim
+         { 
+            flex-direction: column; align-items: center; 
+        } 
+
+        .ceket1{
+            flex-direction: column; 
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .tişort2{
+            flex-direction: column; 
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+        
+         .video img, .erkekgiyim img, .kadıngiyim img 
+             { 
+                flex-direction: column; 
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                width: 80%;
+                height: auto;
+                margin-top: 30px;
+
+             } 
+
+         nav ul 
+         { 
+            flex-direction: column;
+             padding: 20px;  
+            }
+
+          nav ul a 
+          {
+             margin: 10px 0;
+          
+             
+
+             } 
+
+          .indirim, .kombin, video
+           {
+
+             width: 100%; 
+             height: auto; 
+            } }
+    
+
+    @media (max-width: 480px) { 
+
+        nav{
+            width: 100%;
+        }
+
+        .aramaçubuğu 
+        { 
+            width: 40px; 
+        } 
+
+        ul
+         {
+             padding: 10px; 
+            } 
+
+        ul a 
+            {
+             font-size: medium;
+             }
+              
+            }
+
+    
+    
